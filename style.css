@@ -87,8 +87,32 @@ div.subcontainer {
     }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
+    div.container {
+        zoom: 0.7
+    }
+}
+
+@media only screen and (max-width: 500px) {
     div.container {
         zoom: 0.6
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    div.container {
+        zoom: 0.5
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    div.container {
+        zoom: 0.4
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    div.container {
+        zoom: 0.3
     }
 }

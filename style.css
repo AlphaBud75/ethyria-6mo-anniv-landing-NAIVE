@@ -43,6 +43,7 @@ div.subcontainer {
 }
 
 .wordart img {
+    pointer-events: none;
     width: 50%;
     border: 2px solid black;
     top: 60%;

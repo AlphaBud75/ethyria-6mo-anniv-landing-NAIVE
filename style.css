@@ -1,6 +1,7 @@
 body {
     /* background-image: url("background_pic.png"); */
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
+    background-color: black;
 }
 
 div.container {
@@ -33,12 +34,12 @@ div.subcontainer {
 }
 
 .subcontainer:hover img {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     z-index: 50;
 }
 

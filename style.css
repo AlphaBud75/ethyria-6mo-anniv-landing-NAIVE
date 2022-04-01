@@ -1,27 +1,35 @@
 body {
-    background-image: url("background_pic.png");
+    /* background-image: url("background_pic.png"); */
     background-repeat: repeat;
 }
 
 div.container {
-    margin: auto;
     /* border: 10px solid green; */
     display: table;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div.subcontainer {
-    display: inline-flex;
-    margin: 0px;
-}
-
-div.subcontainer_bottom_text {
-    margin-top: -5px;
+    display: inline-block;
+    /* border: 1px solid red; */
+    min-width: 24%;
+    justify-content: center;
+    align-items: center;
 }
 
 .subcontainer img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
     -webkit-transition: transform 0.8s ease-in-out;
     -moz-transition: transform 0.8s ease-in-out;
     transition: transform 0.8s ease-in-out;
+    z-index: 2;
 }
 
 .subcontainer:hover img {
@@ -31,32 +39,54 @@ div.subcontainer_bottom_text {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    z-index: 99;
+    z-index: 50;
 }
 
-@media only screen and (max-width: 1400px) {
+.wordart img {
+    width: 50%;
+    border: 2px solid black;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    position: absolute;
+    z-index: 33;
+}
+
+@media only screen and (max-width: 1480px) {
     div.container {
-        zoom: 0.7;
+        zoom: 0.9
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
     div.container {
-        zoom: 0.6;
+        zoom: 0.65
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     div.container {
-        zoom: 0.5;
+        zoom: 1
+    }
+    .wordart img {
+        width: 80%;
+        border: 2px solid black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 33;
     }
 }
 
-
-/* phones */
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     div.container {
-        zoom: 0.25;
+        zoom: 0.8
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    div.container {
+        zoom: 0.6
     }
 }
